@@ -1,0 +1,90 @@
+{
+  "name": "bmad-agents",
+  "displayName": "BMAD Agents",
+  "description": "AI chat participants for BMAD framework agents - PM, Dev, QA, Architect and more",
+  "version": "0.0.1",
+  "publisher": "YOUR_PUBLISHER_ID",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matgey/hotomo"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["AI", "Chat"],
+  "keywords": ["ai", "chat", "copilot", "agents", "bmad", "team"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "bmad.pm",
+        "name": "pm",
+        "fullName": "John - Product Manager",
+        "description": "Product Manager 📋",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.dev",
+        "name": "dev",
+        "fullName": "Amelia - Developer",
+        "description": "Senior Software Engineer 💻",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.qa",
+        "name": "qa",
+        "fullName": "Quinn - QA Engineer",
+        "description": "QA Engineer 🧪",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.sm",
+        "name": "sm",
+        "fullName": "Bob - Scrum Master",
+        "description": "Technical Scrum Master 🏃",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.architect",
+        "name": "architect",
+        "fullName": "Winston - Architect",
+        "description": "System Architect 🏗️",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.analyst",
+        "name": "analyst",
+        "fullName": "Mary - Business Analyst",
+        "description": "Strategic Business Analyst 📊",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.ux",
+        "name": "ux",
+        "fullName": "Sally - UX Designer",
+        "description": "User Experience Designer 🎨",
+        "isSticky": true
+      },
+      {
+        "id": "bmad.writer",
+        "name": "writer",
+        "fullName": "Paige - Technical Writer",
+        "description": "Technical Documentation Specialist 📚",
+        "isSticky": true
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.0.0"
+  }
+}
