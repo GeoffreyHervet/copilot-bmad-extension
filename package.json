@@ -3,18 +3,30 @@
   "displayName": "BMAD Agents",
   "description": "AI chat participants for BMAD framework agents - PM, Dev, QA, Architect and more",
   "version": "0.0.1",
-  "publisher": "YOUR_PUBLISHER_ID",
+  "publisher": "geoffreyrv",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matgey/hotomo"
+    "url": "https://github.com/GeoffreyHervet/copilot-bmad-extension"
   },
   "engines": {
     "vscode": "^1.90.0"
   },
-  "categories": ["AI", "Chat"],
-  "keywords": ["ai", "chat", "copilot", "agents", "bmad", "team"],
-  "activationEvents": ["onStartupFinished"],
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "ai",
+    "chat",
+    "copilot",
+    "agents",
+    "bmad",
+    "team"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "chatParticipants": [
@@ -85,6 +97,6 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.90.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.3"
   }
 }
